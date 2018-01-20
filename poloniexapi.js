@@ -25,8 +25,7 @@ var request = https.request({
         label[i] = i;
         final[i] = price[i].open;
       }
-      fs.writeFile('C:\\Users\\Brandt Winkler Prins\\Desktop\\Data\\price.json', JSON.stringify(final));
-      fs.writeFile('C:\\Users\\Brandt Winkler Prins\\Desktop\\Data\\label.json', JSON.stringify(label));
+        console.log(final);
     });
 });
 
