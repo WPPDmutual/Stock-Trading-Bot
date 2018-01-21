@@ -1,3 +1,5 @@
+//This employs an API known as poloniex. Poloniex is a trading platform for cryptocurrencies, development docs can be found here: https://poloniex.com/support/api/
+
 var fs = require('fs');
 var https = require("https");
 
