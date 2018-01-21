@@ -1,3 +1,6 @@
+//This fetches data from a service known as intrino. Developer docs can be found at docs.intrinio.com
+//I do not intend to continue using this service as it limits us to around ~500 api calls
+//Yahoo finance is a free alternative though it's API is rather miserable
 var https = require("https");
 
 var username = "1900acbb6cd718c7f397d32cf6aa6b65";
