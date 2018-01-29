@@ -26,7 +26,9 @@ var quarter = 3;
  
  ### Intrinio API
  
- The same simple rationale of the SEC Filings script applies here: insert the appropriate data in the respective variables and run the script. 
+This script retrieves data from an API known as intrinio, daily data for up to 30 years.
+ 
+The same simple rationale of the SEC Filings script applies here: insert the appropriate data in the respective variables and run the script. 
  
  ```
 var upper = "2018-01-12";
@@ -37,7 +39,9 @@ var ticker = "INTC";
 The four criteria here are the upper and lower bounds on the date: yyyy-mm-dd, the ticker, as well as the desired criterium. A list of all 365 criteria can be found [here](http://docs.intrinio.com/tags/intrinio-public#historical-data). A comprehensive view at the intrinio API can be found [here](http://docs.intrinio.com)
  
  ### Poloniex API
- 
+
+The Poloniex API is an API for trading cryptocurrencies, it also supports data. In this set up it retrieves the daily openings prices of a desired cryptocurrency.
+
  Insert the appropriate data in the respective variables and run the script. 
  
  ```
@@ -49,3 +53,5 @@ var ticker = "USDT_BTC";
  Once again with have the upper and lower boundaries on dates from which we intend to retrieve data.
  
  ### Intraday PCAP Parser
+
+The pcap parser is not in its desired state, it should be said however that it is functional. A brief description is warranted. An exchange known as the [IEX Exchange](https://iextrading.com) maintains packet capture files   
