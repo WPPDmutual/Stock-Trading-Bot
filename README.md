@@ -54,4 +54,6 @@ var ticker = "USDT_BTC";
  
  ### Intraday PCAP Parser
 
-The pcap parser is not in its desired state, it should be said however that it is functional. A brief description is warranted. An exchange known as the [IEX Exchange](https://iextrading.com) maintains packet capture files   
+The pcap parser is not in its desired state, it should be said however that it is functional. A brief description is warranted. An exchange known as the [IEX Exchange](https://iextrading.com) maintains packet capture files of its servers for the past year. They can be found [here](https://iextrading.com/trading/market-data/#hist). To use the data, one must first download it, open it in an application known as [Wire Shark](https://wireshark.org). Save it as a .pcap file. Note that while the original file bears the .pcap file extension it is in fact a treacherous pcap-ng file. For compatibility with the parser JS module it must be a traditional pcap file. When Saving it as such ignore all errors thrown by wireshark, it will nevertheless create a functional packet capture file. 
+
+
