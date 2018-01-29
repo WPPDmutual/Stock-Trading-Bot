@@ -40,7 +40,7 @@ parser.on('packet', function(packet) {
 });
 parser.on('end', function (session) {
   for (var key in data) {
-    fs.writeFile("C:/Users/Brandt Winkler Prins/Desktop/pcapdata/" + key + ".json", JSON.stringify(data[key]));
+    fs.writeFile("pcapdata/" + key + ".json", JSON.stringify(data[key]));
   }
     console.log("done");
 });
