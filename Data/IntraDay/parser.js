@@ -39,6 +39,14 @@ parser.on('packet', function(packet) {
 
 });
 parser.on('end', function (session) {
+    
+      if(i == 9999){
+      var dir = './pcapdata';
+
+      if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir);
+      }
+    
   for (var key in data) {
     fs.writeFile("pcapdata/" + key + ".json", JSON.stringify(data[key]));
   }
