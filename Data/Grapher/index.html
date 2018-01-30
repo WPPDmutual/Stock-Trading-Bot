@@ -1,32 +1,12 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <script src="Chart.js"></script>
         <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <script>
-        function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
-            
-            console.log(readTextFile("price.json"));
-        </script>
         <canvas id="myChart" width="400" height="400"></canvas>
     </body>
 </html>

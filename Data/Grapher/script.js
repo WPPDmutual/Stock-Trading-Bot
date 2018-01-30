@@ -1,19 +1,27 @@
 window.onload = function(){
+
+
+$.getJSON( "label.json", function( label ) {
+}).then(function(label){
+  $.getJSON( "price.json", function( price ){
+  }).then(function(label,price) {
+            console.log(label);
+            console.log(price);
             var ctx = document.getElementById("myChart").getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'line',
-                 data: {
-                     //labels: ,
+                data: {
+                     labels: label,
                      datasets: [{
                          fill:false,
                          borderColor: 'black',
                          label: 'Bitcoin Price',
-                         //data: ,
+                         data: label,
                      },
                      ]
                        },
                 options: {
-                showLines: false,
+                showLines: true,
                     animation: {
                         duration: 0,
                     },
@@ -43,6 +51,8 @@ window.onload = function(){
                     },
                     elements: { point: { radius: 2 } },
                 }
-                
+
             });
-        }
+          });
+          });
+          }

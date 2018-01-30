@@ -23,7 +23,6 @@ var request = https.request({
         var price = JSON.parse(json);
         var label = [];
         for(i in price){
-          //if(price[i].rate != price[i-1]){
         label[i] = i;
         final[i] = price[i].open;
       }
