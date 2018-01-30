@@ -68,7 +68,7 @@ Then just run the script and it should generate a folder with the appropriate da
 As this currently only works with the example data given, I will simply give one instruction: use it in firefox. This script only works in firefox - for now that is. There will be some major upcoming changes to the graphing utility:
 
 * Chrome Comapitibility (I do not care enough about other browsers)
-* Rewriting all data collection scripts so that they output JSON data in a format compatible with the grapher (I make it sound harder than it is - when I say rewrite I mean "minimal tweaking")
+* Rewriting all data collection scripts so that they output JSON data in a format compatible with the grapher (I make it sound harder than it is - when I say "rewrite" I mean "minimal tweaking")
 * Creating compatibility with the graphing utility and the JSON format
 * Forcing the output graph to fit in one's viewing window
 * Allowing variable x axis lengths to allow one to view subsets of data (effectively "zooming in")
